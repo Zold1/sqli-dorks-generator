@@ -1,0 +1,4 @@
+amazon
+dell
+walmart
+apple

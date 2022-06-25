@@ -1,0 +1,5 @@
+{site} {keyword} .{page_type}?{page_parameter}=
+{site} -{keyword} - / {page_type}?{page_parameter}= + {search_function}:
+{site} / {keyword} / {page_type}{page_parameter} + {search_function}:
+{site} ++ //{page_type}{page_parameter} + {search_function}:{site}
+{site} ++ / {keyword} / {page_type}{page_parameter} + {search_function}:{site}
