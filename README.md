@@ -121,10 +121,6 @@ dork-generator/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Zold1/dork-generator&type=Date)](https://star-history.com/#Zold1/dork-generator&Date)
-
 ## 📧 Contact
 
 For questions, suggestions, or issues, please open an issue in the GitHub repository.
