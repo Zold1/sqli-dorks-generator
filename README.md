@@ -121,23 +121,10 @@ dork-generator/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ✨ Future Improvements
-
-- [ ] Add command-line arguments support
-- [ ] Add configuration file support
-- [ ] Add output format options
-- [ ] Add validation for input files
-- [ ] Add progress bar for long operations
-- [ ] Add support for custom pattern syntax
-- [ ] Add multithreading support for faster generation
-
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/dork-generator&type=Date)](https://star-history.com/#yourusername/dork-generator&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Zold1/dork-generator&type=Date)](https://star-history.com/#Zold1/dork-generator&Date)
 
 ## 📧 Contact
 
 For questions, suggestions, or issues, please open an issue in the GitHub repository.
-
----
-Remember to use this tool responsibly and ethically. Only perform security testing on systems you have permission to test.
