@@ -24,7 +24,7 @@ This tool is for educational and research purposes only. Only use it on systems 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/dork-generator.git
+git clone https://github.com/Zold1/sqli-dorks-generator.git
 cd dork-generator
 ```
 
