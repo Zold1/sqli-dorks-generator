@@ -1,51 +1,143 @@
-# SQLI Dorks Generator
+# Google Dork Generator
 
-this is simple script for generate dorks list for sql injection
+A Python-based tool for generating Google dorks by combining different search patterns and parameters. This tool helps security researchers and penetration testers create comprehensive lists of Google dorks for their research.
 
-## How to use
+## 🚨 Disclaimer
 
-* Write the names of the sites that have the same category in **sites.txt**
-  * for example shopping will be `Amazon`, `Walmart`, `Alibaba`... etc
+This tool is for educational and research purposes only. Only use it on systems and websites you have explicit permission to test. The authors are not responsible for any misuse or damage caused by this tool.
 
-* Write the keywords for these sites in **keywords.txt**
-  * for example `shop electronics`, `cash on delivery`... etc
+## 🔍 Features
 
-* Write the page types in **page_types.txt**
-  * for example `php`, `cfg`, `aspx`... etc
+- Generates Google dorks using customizable patterns and parameters
+- Supports multiple input files for different dork components
+- Randomizes generated dorks
+- Error handling and validation
+- Cross-platform compatibility
+- Easy to extend and customize
 
-* Write the page parameters in **page_parameters.txt**
-  * for example `id`, `item_id`, `order_id`... etc
+## 📋 Requirements
 
-* Write the dork search functions in **search_functions.txt**
-  * for example `inurl`, `intext`... etc
+- Python 3.7+
+- No external dependencies required
 
-* Finally, write the patterns of dorks in **patterns.txt**, for example:
-  * `{site} {keyword} .{page_type}?{page_parameter}=`
-  * `{site} -{keyword} - / {page_type}?{page_parameter}= + {search_function}:`
+## 🚀 Installation
 
-After finished run the script by `python dorks.py`
-
-results in **dorks.txt** will be like this:
-
-``` plain
-Alibaba shop electronics .php?item_id=
-Amazon shop electronics .php?order_id=
-Alibaba -cash on delivery - / aspx?id= + inurl:
-Amazon -shop electronics - / cfg?item_id= + intext:
-Amazon cash on delivery .php?order_id=
-Amazon -shop electronics - / aspx?order_id= + inurl:
-Walmart shop electronics .cfg?order_id=
-Walmart -cash on delivery - / aspx?order_id= + intext:
-Walmart cash on delivery .php?item_id=
-Alibaba cash on delivery .cfg?item_id=
-Alibaba shop electronics .php?id=
-Walmart -cash on delivery - / cfg?item_id= + intext:
-Alibaba shop electronics .cfg?order_id=
-Amazon cash on delivery .cfg?id=
-Amazon -shop electronics - / cfg?order_id= + intext:
-Amazon shop electronics .cfg?item_id=
-Walmart shop electronics .aspx?item_id=
-Walmart -shop electronics - / php?id= + inurl:
-Alibaba shop electronics .cfg?item_id=
-Alibaba cash on delivery .aspx?item_id=
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/dork-generator.git
+cd dork-generator
 ```
+
+2. Make sure you have the required input files (see Input Files section below)
+
+## 💻 Usage
+
+Run the script:
+```bash
+python dorks.py
+```
+
+The script will prompt you for input file locations. Press Enter to use default filenames:
+- sites.txt
+- keywords.txt
+- page_types.txt
+- page_parameters.txt
+- search_functions.txt
+- patterns.txt
+
+Output will be saved to `dorks.txt`.
+
+## 📁 Input Files Format
+
+Create the following text files in the same directory as the script:
+
+### sites.txt
+```
+site:example.com
+site:*.example.com
+```
+
+### keywords.txt
+```
+password
+admin
+login
+```
+
+### page_types.txt
+```
+filetype:pdf
+filetype:doc
+ext:php
+```
+
+### page_parameters.txt
+```
+inurl:admin
+inurl:login
+intitle:admin
+```
+
+### search_functions.txt
+```
+intext:
+intitle:
+inurl:
+```
+
+### patterns.txt
+```
+{site} {keyword} {page_type}
+{site} {page_parameter} {search_function}{keyword}
+```
+
+## 🔧 Customization
+
+You can modify the input files to customize the generated dorks according to your needs. Each component will be combined according to the patterns specified in `patterns.txt`.
+
+## 📊 Project Structure
+
+```
+dork-generator/
+├── dorks.py
+├── README.md
+├── sites.txt
+├── keywords.txt
+├── page_types.txt
+├── page_parameters.txt
+├── search_functions.txt
+└── patterns.txt
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a new branch for your feature
+3. Commit your changes
+4. Push to your branch
+5. Create a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ✨ Future Improvements
+
+- [ ] Add command-line arguments support
+- [ ] Add configuration file support
+- [ ] Add output format options
+- [ ] Add validation for input files
+- [ ] Add progress bar for long operations
+- [ ] Add support for custom pattern syntax
+- [ ] Add multithreading support for faster generation
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/dork-generator&type=Date)](https://star-history.com/#yourusername/dork-generator&Date)
+
+## 📧 Contact
+
+For questions, suggestions, or issues, please open an issue in the GitHub repository.
+
+---
+Remember to use this tool responsibly and ethically. Only perform security testing on systems you have permission to test.
