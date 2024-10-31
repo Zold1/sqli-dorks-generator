@@ -1,10 +1,10 @@
+![Google Dork Generator](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Dork%20Generator&section=header&desc=Creates%20search%20patterns%20for%20web%20reconnaissance&descAlignY=55&fontAlignY=35&descAlign=50&descSize=20&animation=fadeIn&fontSize=50 "Google Dork Generator")
+
 # Google Dork Generator
 
 A Python-based tool for generating Google dorks by combining different search patterns and parameters. This tool helps security researchers and penetration testers create comprehensive lists of Google dorks for their research.
 
-## 🚨 Disclaimer
-
-This tool is for educational and research purposes only. Only use it on systems and websites you have explicit permission to test. The authors are not responsible for any misuse or damage caused by this tool.
+💡 **Pro Tip**: Star this repository to keep it handy for future reference!
 
 ## 🔍 Features
 
@@ -109,7 +109,7 @@ dork-generator/
 └── patterns.txt
 ```
 
-## 🤝 Contributing
+## 🚩 Contributing
 
 1. Fork the repository
 2. Create a new branch for your feature
