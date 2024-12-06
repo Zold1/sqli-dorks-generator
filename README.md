@@ -24,7 +24,7 @@ A Python-based tool for generating Google dorks by combining different search pa
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Zold1/sqli-dorks-generator.git
+git clone https://github.com/AhmedOsamaMath/sqli-dorks-generator.git
 cd dork-generator
 ```
 
